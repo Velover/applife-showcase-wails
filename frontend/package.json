@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4",
-    "app-life": "C:/Projects/TS/app-life-package/app-life-0.1.0.tgz",
+    "app-life": "Packages/app-life-0.1.0.tgz",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
