@@ -1,4 +1,7 @@
-import { Controller } from "app-life";
+import { Controller, OnInit, OnStart } from "app-life";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "../UI/App.js";
 
 @Controller({})
 export class ApplicationController {
@@ -6,7 +9,19 @@ export class ApplicationController {
     console.log("ApplicationController initialized");
   }
 
-  initialize() {
+  @OnInit()
+  private Init() {
     console.log("ApplicationController initialized");
+  }
+
+  @OnStart()
+  private Start() {
+    const container = document.getElementById("root");
+
+    const root = createRoot(container!);
+
+    root.render(
+      React.createElement(React.StrictMode, {}, React.createElement(App))
+    );
   }
 }

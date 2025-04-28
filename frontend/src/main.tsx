@@ -1,14 +1,6 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App.js";
+import { AppLife } from "app-life";
+import { ApplicationModule } from "./Features/Application/ApplicationModule.js";
 import "./main.css";
 
-const container = document.getElementById("root");
-
-const root = createRoot(container!);
-
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+AppLife.LoadModules([ApplicationModule]);
+AppLife.Start();
