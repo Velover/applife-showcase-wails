@@ -1,8 +1,9 @@
-import "../../../main.css";
+import GreetingUI from "../../Greeting/UI/GreetingUI.js";
+
 function App() {
   return (
     <div className=" size-full ">
-      <div className=" size-20 bg-white">test</div>
+      <GreetingUI />
     </div>
   );
 }
