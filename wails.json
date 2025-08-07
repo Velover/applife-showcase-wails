@@ -7,7 +7,7 @@
   "frontend:dev:watcher": "bun run dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
-    "name": "Catargo",
-    "email": "cobauper@gmail.com"
+    "name": "author",
+    "email": "example@gmail.com"
   }
 }
